@@ -19,7 +19,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  database: todo_app
+  host: tododb.crtniylkokoa.us-west-2.rds.amazonaws.com
+  port: 3306
+  username: raj
+  password: webenrich123
   pool: 5
   timeout: 5000

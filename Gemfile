@@ -1,9 +1,9 @@
-ruby '2.0.0'
+ruby '2.2.2'
 
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.beta1'
+gem 'rails'
 
 # heroku works only with postgres
 # group :production, :staging do
@@ -13,6 +13,9 @@ gem 'bootstrap-sass'
 gem 'sass-rails'
 group :development, :test do
   gem 'sqlite3'
+end
+group :production do
+  gem 'mysql'
 end
 
 # Gems used only for assets and not required
