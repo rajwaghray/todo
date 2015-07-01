@@ -3,7 +3,7 @@ ruby '2.2.2'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '4.2.0'
 
 # heroku works only with postgres
 # group :production, :staging do
