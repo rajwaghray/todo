@@ -36,7 +36,7 @@ class TasksController < ApplicationController
       if @task.update(task_params)
 
         # generate tags again
-        @task.tags.delete_all
+        # @task.tags.delete_all
         @task.generate_tags!
         @task.save
 
