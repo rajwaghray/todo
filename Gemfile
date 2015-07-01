@@ -3,7 +3,7 @@ ruby '2.2.2'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails' 
 
 # heroku works only with postgres
 # group :production, :staging do
@@ -11,8 +11,11 @@ gem 'rails'
 # end
 gem 'bootstrap-sass'
 gem 'sass-rails'
+gem 'json'
+gem 'multi_json'
 group :development, :test do
   gem 'sqlite3'
+  gem 'byebug'
 end
 group :production do
   gem 'mysql'
@@ -22,7 +25,7 @@ end
 # in production environments by default.
 group :assets do
   # gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby

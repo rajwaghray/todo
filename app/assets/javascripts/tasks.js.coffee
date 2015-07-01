@@ -23,7 +23,7 @@ $(document).ready(
   $("#new_task").on "ajax:success",
     (event, data) ->
       $("table.todo tbody").append(data).find('.title:last').restInPlace()
-      addMotivateLink "table.todo tbody tr:last"
+      
       $("#task_title").val ''
       $("table.todo tbody tr:last .motivate").click()
 
